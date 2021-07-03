@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Restraunt App</h1>
+  </header>
+  <main>
+    <fieldset>
+      <form id="orderForm">
+
+        <label for="Order">What are you like to order?</label><br>
+
+        <select name="Order" id="Order">
+  <option value="Burger">Burger</option>
+  <option value="Pizza">Pizza</option>
+  <option value="Salad">Salad</option>
+  <option value="Pepsi">Pepsi</option>
+</select><br>
+
+        <label for="Quantity">Quantity</label><br>
+        <input type="number" id="Quantity" name="Quantity" placeholder="How Many Items Uou Need To Order" min="1"><br>
+        <button id="submitBtn" type="submit">Submit</button>
+      </form>
+    </fieldset>
+    <table id="orderTable">
+      <!-- <thead></thead>
+      <tbody></tbody>
+      <tfoot></tfoot> -->
+    </table>
+    <div id="clearTable">
+      <button id="clearBtn" onclick="clearTable()">clear table</button>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
